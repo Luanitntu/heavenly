@@ -1,0 +1,67 @@
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+@keyframes smoothScroll {
+    0% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes circle {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
+
+%order-online {
+    font-size: 24px;
+    font-family: "PRIMETIME";
+    color: #885838;
+    text-transform: uppercase;
+    line-height: 1.292;
+    background: url('../images/btn-order-online.png')no-repeat;
+    background-size: contain;
+    padding: 15px 30px 21px;
+    text-decoration: none;
+}
+
+%title-about {
+    position: relative;
+    font-size: 59.637px;
+    font-family: "Hemmet Personal Use Only";
+    color: #b6903b;
+    line-height: 1.405;
+    text-align: left;
+    display: inline-block;
+}
+
+%before-title {
+    content: '';
+    width: 170px;
+    height: 24px;
+    top: 60%;
+    transform: translateY(-50%);
+    background: url('../images/before-title-about.png')no-repeat;
+    position: absolute;
+}
+
+%p-about {
+    font-size: 21px;
+    font-family: "Bernice";
+    color: #3d3d3d;
+    line-height: 1.476;
+}

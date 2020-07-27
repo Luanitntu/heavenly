@@ -1,0 +1,245 @@
+#header-page {
+    .sticky {
+        &.fixed {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+            visibility: visible;
+            z-index: 9999;
+            animation: smoothScroll 1s forwards;
+            -webkit-animation: smoothScroll 1s forwards;
+            -moz-animation: smoothScroll 1s forwards;
+            -o-animation: smoothScroll 1s forwards;
+        }
+        position: relative;
+        z-index: 999;
+        -moz-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+        .wrap-menu {
+            display: flex;
+            position: relative;
+            .logo {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                display: inline-block;
+                text-align: center;
+                a.logo-mobile {
+                    display: none;
+                }
+            }
+            .wrap-header-menu {
+                margin-top: 15px;
+                margin-bottom: 18px;
+                .navbar-menu-mobile {
+                    ul {
+                        flex-direction: row;
+                        li {
+                            cursor: pointer;
+                            padding-right: 96px;
+                            a {
+                                font-size: 28px;
+                                font-family: "Bernice";
+                                color: #886038;
+                                line-height: 2.992;
+                                text-align: left;
+                                text-decoration: none;
+                                position: relative;
+                                &:hover:before {
+                                    content: '';
+                                    width: 5px;
+                                    height: 130px;
+                                    top: 80%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    background: url('../images/hover-menu.png')no-repeat;
+                                    position: absolute;
+                                }
+                            }
+                            &:nth-child(2) {
+                                margin-right: 210px;
+                            }
+                            &:nth-child(3) {
+                                margin-left: 276px;
+                            }
+                            &:last-child {
+                                padding-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .navbar-button {
+                display: none;
+            }
+        }
+    }
+    .banner-slide {
+        .flexslider {
+            margin-bottom: 10px;
+            border-radius: 0;
+            overflow: hidden;
+            ul.slides {
+                position: relative;
+                .text-slide {
+                    position: absolute;
+                    top: 70%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    p {
+                        font-size: 45px;
+                        font-family: "PRIMETIME";
+                        color: #fff;
+                        line-height: 1.396;
+                        text-align: left;
+                        span {
+                            font-size: 49px;
+                            font-family: "UVF Aphrodite Pro";
+                            color: rgb(255, 255, 255);
+                            line-height: 0.82;
+                            text-align: left;
+                        }
+                    }
+                    .oreder-online {
+                        margin-top: 80px;
+                        text-align: center;
+                        a {
+                            @extend %order-online;
+                        }
+                    }
+                }
+                img.banner-mobile {
+                    display: none;
+                }
+            }
+            .btn-flex {
+                position: absolute;
+                top: 50%;
+                z-index: 2;
+                transform: translateY(-50%);
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                a {
+                    position: relative;
+                    z-index: 2;
+                    width: 44px;
+                    height: 112px;
+                    cursor: pointer;
+                    &.flex-prev:after {
+                        content: '';
+                        width: 27px;
+                        height: 22px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 13%;
+                        position: absolute;
+                        background: url(../images/flex-prev.png)no-repeat;
+                    }
+                    &.flex-prev:before {
+                        content: '';
+                        width: 88px;
+                        height: 112px;
+                        background: rgba(255, 255, 255, 0.7);
+                        top: 0;
+                        left: -98%;
+                        border-radius: 50%;
+                        position: absolute;
+                        transition: all ease-in-out 0.3s;
+                    }
+                    &.flex-next:after {
+                        content: '';
+                        width: 27px;
+                        height: 22px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 13%;
+                        position: absolute;
+                        background: url(../images/flex-next.png)no-repeat;
+                    }
+                    &.flex-next:before {
+                        content: '';
+                        width: 88px;
+                        height: 112px;
+                        background: rgba(255, 255, 255, 0.7);
+                        top: 0;
+                        right: -98%;
+                        border-radius: 50%;
+                        position: absolute;
+                        transition: all ease-in-out 0.3s;
+                    }
+                    &.flex-prev:hover .img-flex-prev {
+                        opacity: 1;
+                        transition: all ease-in-out 0.3s;
+                    }
+                    &.flex-prev:hover:before {
+                        display: none;
+                        transition: all ease-in-out 0.3s;
+                    }
+                    &.flex-next:hover .img-flex-next {
+                        opacity: 1;
+                        transition: all ease-in-out 0.3s;
+                    }
+                    &.flex-next:hover:before {
+                        display: none;
+                        transition: all ease-in-out 0.3s;
+                    }
+                    .img-flex-prev,
+                    .img-flex-next {
+                        opacity: 0;
+                        width: 110px;
+                        height: 110px;
+                        border-radius: 50%;
+                        border: 1px solid #fff;
+                        display: inline-block;
+                        background-size: cover;
+                        background-position: center;
+                        position: relative;
+                        z-index: 3;
+                        transition: all ease-in-out 0.3s;
+                    }
+                    .img-flex-next {
+                        left: -67px;
+                    }
+                }
+            }
+        }
+        ol.flex-control-nav {
+            display: none;
+        }
+    }
+    .banner-page {
+        position: relative;
+        .img-banner {
+            img {
+                max-width: 100%;
+            }
+        }
+        .title-page {
+            position: absolute;
+            top: 53%;
+            left: 53%;
+            transform: translate(-50%, -50%);
+            p {
+                font-size: 150px;
+                font-family: "Hemmet Personal Use Only";
+                color: rgba(255, 255, 255, 0.702);
+                line-height: 0.207;
+            }
+        }
+        .oreder-online {
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translateX(-50%);
+            a {
+                @extend %order-online;
+            }
+        }
+    }
+}

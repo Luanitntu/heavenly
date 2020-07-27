@@ -1,0 +1,75 @@
+#footer {
+    padding-top: 10px;
+    .footer-top {
+        .footer-top__img {
+            display: flex;
+            justify-content: space-between;
+            .top-img {
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        padding: 30px;
+        .footer-social {
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                li {
+                    width: 36px;
+                    height: 36px;
+                    border: 1px solid #adadad;
+                    border-radius: 50%;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 8px;
+                    cursor: pointer;
+                    a {
+                        display: inline-block;
+                        color: #adadad;
+                        font-size: 18px;
+                    }
+                    &:hover {
+                        border: 1px solid #ffbc49;
+                    }
+                    &:hover a {
+                        color: #ffbc49;
+                    }
+                }
+            }
+        }
+        .footer-copyright {
+            p {
+                font-size: 18px;
+                font-family: "Bernice";
+                color: #646464;
+                line-height: 1.842;
+                text-align: right;
+                margin-bottom: 0;
+            }
+        }
+        .footer-create {
+            p,
+            a {
+                font-size: 17px;
+                font-family: "Bernice";
+                color: #646464;
+                line-height: 2.059;
+                text-align: right;
+                text-decoration: none;
+                margin-bottom: 0;
+            }
+            a:hover {
+                color: #ffbc49;
+            }
+        }
+    }
+}
