@@ -71,7 +71,18 @@
     }
 }
 
-@media only screen and (max-width: 1100px) {}
+@media only screen and (max-width: 1100px) {
+    /*===============Page Contact================*/
+    #page-contact .contact-form .contact-form__form .name-contact,
+    #page-contact .contact-form .contact-form__form .phone-contact,
+    #page-contact .contact-form .contact-form__form .email-contact {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #page-contact .contact-form .contact-form__form .text-contact {
+        margin-top: 0;
+    }
+}
 
 @media only screen and (max-width: 1000px) {}
 
@@ -272,6 +283,20 @@
     /*===========Page Gallery============*/
     #page-gallery .block-gallery {
         justify-content: space-around;
+    }
+    /*==================Page Contact==========*/
+    #page-contact .contact-info .contact-info__content {
+        flex-direction: column;
+    }
+    #page-contact .contact-info .contact-info__content .info-content__left .content-left__add {
+        width: 100%;
+    }
+    #page-contact .contact-info .contact-info__content .info-content__right {
+        margin-top: 30px;
+        text-align: center;
+    }
+    #page-contact .contact-form {
+        margin-top: 40px;
     }
 }
 
