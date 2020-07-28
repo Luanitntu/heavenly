@@ -376,6 +376,11 @@
         padding: 12px 30px;
     }
 
+    #header-page .banner-page .title-page {
+        width: 100%;
+        text-align: center;
+    }
+  /*=======================Page Home=======================*/
     #page-home .testimo .bg-testimo {
         background-size: 100% 100%;
     }
@@ -393,6 +398,15 @@
 
     #page-home .testimo .bg-testimo .btn-slick {
         display: none;
+    }
+  /*====================Page Contact=======================*/
+    #page-contact {
+        padding: 35px 0 65px;
+    }
+
+    #page-contact .contact-form .contact-form__form input[type="submit"] {
+        padding: 12px 40px 17px;
+        font-size: 20px;
     }
 
     #footer .footer-top .footer-top__img .top-img.top-img1 {
@@ -577,6 +591,20 @@
     #page-about .about-special .about-special__content--img .content__img--left img {
         max-width: 100%;
     }
+  /*====================Page Contact=====================*/
+    #page-contact .contact-info .contact-info__title h4:before,
+  #page-contact .contact-form .contact-form__title h4:before {
+        display: none;
+    }
+
+    #page-contact .contact-form .contact-form__form .name-contact,
+  #page-contact .contact-form .contact-form__form .phone-contact {
+        margin-right: 0;
+    }
+
+    #page-contact .contact-info .contact-info__content .info-content__right img {
+        max-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -610,6 +638,14 @@
   #page-about .about-history .about-history__content .history-content__left p,
   #page-about .about-manager .about-manager__content .manager__content--said p {
         font-size: 18px;
+    }
+  /*=============Page COntact====================*/
+    #page-contact .contact-info .contact-info__content .info-content__left .content-left__add ul li {
+        font-size: 18px;
+    }
+
+    #page-contact .contact-info .contact-info__content .info-content__left .content-left__add ul {
+        padding-left: 0;
     }
 }
 

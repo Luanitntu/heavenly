@@ -1,101 +1,121 @@
 #page-about {
-    padding: 87px 0 108px;
-    background-color: #f3f4ef;
-    .about-special {
-        .about-special__title {
-            display: inline-block;
-            h4 {
-                @extend %title-about;
-                margin-bottom: 26px;
-                &:before {
-                    @extend %before-title;
-                    right: -90%;
-                }
-            }
+  padding: 87px 0 108px;
+  background-color: #f3f4ef;
+
+  .about-special {
+    .about-special__title {
+      display: inline-block;
+
+      h4 {
+        @extend %title-about;
+        margin-bottom: 26px;
+
+        &:before {
+          @extend %before-title;
+          right: -90%;
         }
-        .about-special__content {
-            p {
-                @extend %p-about;
-            }
-        }
-        .about-special__content--img {
-            display: flex;
-            justify-content: space-between;
-            .content__img--left {
-                margin-left: -30px;
-            }
-            .content__img--center {
-                margin-top: 13px;
-                padding: 0 20px 0 10px;
-                p {
-                    @extend %p-about;
-                }
-            }
-        }
+      }
     }
-    .about-history {
-        margin-top: 60px;
-        .about-history__title {
-            h4 {
-                @extend %title-about;
-                &:before {
-                    @extend %before-title;
-                    right: -123%;
-                }
-            }
-        }
-        .about-history__content {
-            margin-top: 12px;
-            display: flex;
-            justify-content: space-between;
-            .history-content__left {
-                p {
-                    @extend %p-about;
-                }
-            }
-            .history-content__right {
-                margin-top: -100px;
-            }
-        }
+
+    .about-special__content {
+      p {
+        @extend %p-about;
+      }
     }
-    .about-manager {
-        margin-top: 46px;
-        .about-manager__title {
-            h4 {
-                @extend %title-about;
-                margin-bottom: 30px;
-                &:before {
-                    @extend %before-title;
-                    right: -45%;
-                }
-            }
+
+    .about-special__content--img {
+      display: flex;
+      justify-content: space-between;
+
+      .content__img--left {
+        margin-left: -30px;
+      }
+
+      .content__img--center {
+        margin-top: 13px;
+        padding: 0 20px 0 10px;
+
+        p {
+          @extend %p-about;
         }
-        .about-manager__content {
-            .manager__content--name {
-                p {
-                    font-size: 22px;
-                    font-family: "Bernice";
-                    color: #b6903b;
-                    line-height: 1.409;
-                    text-align: left;
-                }
-            }
-            .manager__content--said {
-                p {
-                    @extend %p-about;
-                    text-indent: 50px;
-                    position: relative;
-                    &:before {
-                        content: '';
-                        width: 35px;
-                        height: 28px;
-                        top: -10px;
-                        left: 0;
-                        background: url('../images/before-p-about.png')no-repeat;
-                        position: absolute;
-                    }
-                }
-            }
-        }
+      }
     }
+  }
+
+  .about-history {
+    margin-top: 60px;
+
+    .about-history__title {
+      h4 {
+        @extend %title-about;
+
+        &:before {
+          @extend %before-title;
+          right: -123%;
+        }
+      }
+    }
+
+    .about-history__content {
+      margin-top: 12px;
+      display: flex;
+      justify-content: space-between;
+
+      .history-content__left {
+        p {
+          @extend %p-about;
+        }
+      }
+
+      .history-content__right {
+        margin-top: -100px;
+      }
+    }
+  }
+
+  .about-manager {
+    margin-top: 46px;
+
+    .about-manager__title {
+      h4 {
+        @extend %title-about;
+        margin-bottom: 30px;
+
+        &:before {
+          @extend %before-title;
+          right: -45%;
+        }
+      }
+    }
+
+    .about-manager__content {
+      .manager__content--name {
+        p {
+          font-size: 22px;
+          font-family: "Bernice";
+          color: #b6903b;
+          line-height: 1.409;
+          text-align: left;
+        }
+      }
+
+      .manager__content--said {
+        p {
+          @extend %p-about;
+          text-indent: 50px;
+          position: relative;
+
+          &:before {
+            content: "";
+            width: 35px;
+            height: 28px;
+            top: -10px;
+            left: 0;
+            background: url("../images/before-p-about.png") no-repeat;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
 }
