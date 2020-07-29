@@ -862,6 +862,11 @@
     padding: 10px 26px 7px 3px;
     margin-top: 8px;
     letter-spacing: 3px;
+    text-decoration: none;
+}
+
+#page-contact .contact-info .contact-info__content .info-content__left .content-left__phone a:hover {
+    color: #b6903b;
 }
 
 #page-contact .contact-info .contact-info__content .info-content__left .content-left__add {
