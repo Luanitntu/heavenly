@@ -1,5 +1,22 @@
 /* =============================== */
 
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border-color: unset;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: unset;
+    background-color: unset;
+    border-color: unset;
+}
+
+.nav-tabs .nav-link {
+    border: 0;
+    border-radius: 0;
+}
+
 .flexslider {
     border: 0;
     background: none;
@@ -31,14 +48,14 @@
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
-    background: #ca1f27;
+    background: #ffbc49;
 }
 
 
 /* Handle on hover */
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(202, 31, 39, 0.7);
+    background: rgb(255, 188, 75, 0.7);
 }
 
 

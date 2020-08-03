@@ -36,6 +36,34 @@
     #page-gallery .block-gallery {
         justify-content: space-evenly;
     }
+  /*--------------------Page Menu----------------*/
+    #page-menu .wrap-page-menu {
+        max-width: 1199px;
+    }
+
+    #page-menu .wrap-page-menu .content-menu {
+        margin-left: 45px;
+    }
+
+    #page-menu .wrap-page-menu .content-menu .note-menu {
+        flex-direction: column;
+    }
+
+    #page-menu .wrap-page-menu .content-menu .note-menu .item-note.note-menu-1 {
+        margin-bottom: 15px;
+    }
+
+    #page-menu .wrap-page-menu .content-menu .note-menu .item-note p {
+        text-align: center;
+    }
+
+    #page-menu .wrap-page-menu .cate-menu .list-tab-menu ul li a {
+        font-size: 23px;
+    }
+
+    #page-menu .wrap-page-menu .content-menu .tab-content .content-cate .content-cate__name h4 {
+        font-size: 50px;
+    }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -73,6 +101,33 @@
 
     #page-contact .contact-form .contact-form__form .text-contact {
         margin-top: 0;
+    }
+  /*===========PAge Menu=========*/
+    #page-menu .wrap-page-menu {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    #page-menu .wrap-page-menu .cate-menu,
+  #page-menu .wrap-page-menu .content-menu {
+        width: 100%;
+    }
+
+    #page-menu .wrap-page-menu .cate-menu .list-tab-menu ul li a:hover:before,
+  #page-menu .wrap-page-menu .cate-menu .list-tab-menu ul li a.active:before {
+        width: 102%;
+    }
+
+    #page-menu .wrap-page-menu .content-menu {
+        margin-left: 0;
+    }
+
+    #page-menu .wrap-page-menu .content-menu .note-menu {
+        margin-top: 20px;
+    }
+
+    #page-menu .wrap-page-menu .content-menu .tab-content .content-cate {
+        padding-right: 0;
     }
 }
 
@@ -323,6 +378,22 @@
     #page-contact .contact-form {
         margin-top: 40px;
     }
+  /*===============Page Menu===================*/
+    #page-menu .wrap-page-menu .cate-menu .list-tab-menu ul {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    #page-menu .wrap-page-menu .cate-menu .list-tab-menu ul li a:hover:before,
+  #page-menu .wrap-page-menu .cate-menu .list-tab-menu ul li a.active:before {
+        width: 100%;
+        left: 0;
+    }
+
+    #page-menu .wrap-page-menu .cate-menu .list-tab-menu ul li a {
+        padding: 0 10px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -415,6 +486,10 @@
 
     #footer .footer-bottom .footer-social ul {
         padding: 0 30%;
+    }
+  /*===============Page Menu===============*/
+    #page-menu .wrap-page-menu .cate-menu .list-tab-menu ul {
+        justify-content: space-between;
     }
 }
 
@@ -604,6 +679,46 @@
 
     #page-contact .contact-info .contact-info__content .info-content__right img {
         max-width: 100%;
+    }
+  /*===============Page Menu===============*/
+    #page-menu {
+        padding: 50px 0 70px;
+    }
+
+    #page-menu .wrap-page-menu .content-menu .tab-content .content-cate .content-cate__name h4 {
+        font-size: 40px;
+    }
+
+    #page-menu .wrap-page-menu .content-menu .tab-content .content-cate .content-cate__note p {
+        font-size: 18px;
+    }
+
+    #page-menu .wrap-page-menu .cate-menu .list-tab-menu {
+        padding: 0 10px;
+    }
+
+    #page-menu .wrap-page-menu .cate-menu .list-tab-menu ul li a {
+        font-size: 22px;
+    }
+
+    #page-menu .wrap-page-menu .content-menu .tab-content .product-menu {
+        flex-direction: column;
+    }
+
+    #page-menu .wrap-page-menu .content-menu .tab-content .product-menu .product-menu__cart--price {
+        margin-left: 0;
+    }
+
+    #page-menu .wrap-page-menu .content-menu .tab-content .product-menu .product-menu__cart--price .menu-item__cart a {
+        padding: 10px 15px;
+    }
+
+    #page-menu .wrap-page-menu .content-menu .tab-content .product-menu .product-menu__cart--price .menu-item__cart a:before {
+        background-size: 100% 100%;
+    }
+
+    #page-menu .wrap-page-menu .content-menu .tab-content .product-menu .product-menu__name p {
+        font-size: 18px;
     }
 }
 

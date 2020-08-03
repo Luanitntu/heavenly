@@ -17,13 +17,13 @@ function banner() {
     }
 }
 // --------------button menu----------
-jQuery(document).ready(function() {
-    jQuery(".button-sticky").click(function() {
+jQuery(document).ready(function () {
+    jQuery(".button-sticky").click(function () {
         jQuery("#header-page .sticky .wrap-menu .wrap-header-menu .navbar-menu-mobile").toggleClass("active");
         jQuery("#header-page .sticky .wrap-menu .wrap-header-menu .navbar-menu-mobile .navbar-sticky").toggleClass("active");
         jQuery("body").toggleClass("show-scroll");
     });
-    jQuery(document).mouseup(function(e) {
+    jQuery(document).mouseup(function (e) {
         if (!jQuery(".button-sticky").is(e.target) && jQuery(".button-sticky").has(e.target).length === 0) {
             jQuery("#header-page .sticky .wrap-menu .wrap-header-menu .navbar-menu-mobile").removeClass("active");
             jQuery("#header-page .sticky .wrap-menu .wrap-header-menu .navbar-menu-mobile .navbar-sticky").removeClass("active");
@@ -32,7 +32,16 @@ jQuery(document).ready(function() {
     });
 });
 // -------load more
+jQuery(window).load(function() {
+    click_tab();
+});
 
+function click_tab() {
+    jQuery('.list-tab-menu .nav-tabs > li > a').click(function() {
+        jQuery('.list-tab-menu .nav-tabs > li').removeClass();
+        jQuery(this).parent().addClass('active');
+    });
+}
 // jQuery(function() {
 //     var width = jQuery(window).width();
 //     if (width > 600) {
@@ -261,17 +270,17 @@ jQuery(document).ready(function () {
 });
 
 // --------------sticky menu--------------
-jQuery(document).ready(function () {
-  jQuery(function () {
-    var width = jQuery(window).width();
-    var header = jQuery(".sticky");
-    offset = header.offset().top;
-    jQuery(window).scroll(function () {
-      if (jQuery(this).scrollTop() > offset && width > 992) {
-        header.addClass("fixed");
-      } else {
-        header.removeClass("fixed");
-      }
+jQuery(document).ready(function() {
+    jQuery(function() {
+        var width = jQuery(window).width();
+        var header = jQuery(".sticky");
+        offset = header.offset().top;
+        jQuery(window).scroll(function() {
+            if (jQuery(this).scrollTop() > offset && width > 992) {
+                header.addClass("fixed");
+            } else {
+                header.removeClass("fixed");
+            }
+        });
     });
-  });
 });

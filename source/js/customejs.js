@@ -1,5 +1,14 @@
 // -------load more
+jQuery(window).load(function() {
+    click_tab();
+});
 
+function click_tab() {
+    jQuery('.list-tab-menu .nav-tabs > li > a').click(function() {
+        jQuery('.list-tab-menu .nav-tabs > li').removeClass();
+        jQuery(this).parent().addClass('active');
+    });
+}
 // jQuery(function() {
 //     var width = jQuery(window).width();
 //     if (width > 600) {

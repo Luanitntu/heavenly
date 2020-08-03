@@ -1,0 +1,170 @@
+#page-menu {
+    background: #f3f4ef;
+    padding-top: 90px;
+    padding-bottom: 130px;
+    .wrap-page-menu {
+        max-width: 1365px;
+        display: flex;
+        margin: 0 auto;
+        .cate-menu {
+            width: (418px/1365px)*100%;
+            border: 1px solid #b6903b;
+            .list-tab-menu {
+                padding-left: 20px;
+                ul {
+                    border-bottom: 0;
+                    flex-direction: column;
+                    li {
+                        a {
+                            font-size: 26.607px;
+                            font-family: "Bernice";
+                            color: #b6903b;
+                            line-height: 1.672;
+                            position: relative;
+                            z-index: 1;
+                            padding: 0;
+                            margin: 5px 0;
+                            transition: all ease-in-out 0.2s;
+                            &:hover:before,
+                            &.active:before {
+                                content: '';
+                                width: 106%;
+                                height: 100%;
+                                top: 0;
+                                left: -35px;
+                                background: #f3ab31;
+                                position: absolute;
+                                z-index: -1;
+                                transition: all ease-in-out 0.2s;
+                            }
+                            &:hover,
+                            &.active {
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .content-menu {
+            width: 100%-((418px/1365px)*100%);
+            margin-left: 60px;
+            .note-menu {
+                display: flex;
+                justify-content: space-between;
+                .item-note {
+                    border: 1px solid #ff571c;
+                    padding: 4px 20px;
+                    p {
+                        font-size: 20px;
+                        font-family: "Bernice";
+                        color: #ff571c;
+                        line-height: 1.5;
+                        text-align: left;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .tab-content {
+                margin-top: 40px;
+                .content-cate {
+                    padding-right: 15%;
+                    .content-cate__name {
+                        h4 {
+                            font-size: 59.637px;
+                            font-family: "Hemmet Personal Use Only";
+                            color: #b6903b;
+                            line-height: 1.405;
+                            text-align: left;
+                        }
+                    }
+                    .content-cate__note {
+                        p {
+                            font-size: 21px;
+                            font-family: "Bernice";
+                            color: #3d3d3d;
+                            line-height: 1.543;
+                            text-align: left;
+                        }
+                    }
+                }
+                .product-menu {
+                    display: flex;
+                    justify-content: space-between;
+                    .product-menu__name {
+                        display: flex;
+                        align-items: center;
+                        p {
+                            font-size: 21px;
+                            font-family: "Bernice";
+                            color: #3d3d3d;
+                            line-height: 3.095;
+                            text-align: left;
+                            margin-bottom: 0;
+                        }
+                        a.icon-popup {
+                            margin-top: -3px;
+                            margin-left: 8px;
+                        }
+                    }
+                    .product-menu__cart--price {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: baseline;
+                        margin-left: auto;
+                        .menu-item__price {
+                            margin-right: 15px;
+                            p {
+                                font-size: 21px;
+                                font-family: "Bernice";
+                                color: #3d3d3d;
+                                line-height: 3.095;
+                                text-align: left;
+                                margin-bottom: 0;
+                            }
+                        }
+                        .menu-item__cart {
+                            display: inline-block;
+                            position: relative;
+                            a {
+                                font-size: 18px;
+                                font-family: "Bernice";
+                                color: #885838;
+                                text-transform: uppercase;
+                                line-height: 2.389;
+                                text-align: center;
+                                margin-bottom: 0;
+                                text-decoration: none;
+                                position: relative;
+                                z-index: 2;
+                                padding: 14px 25px;
+                                &:before {
+                                    content: '';
+                                    width: 100%;
+                                    height: 100%;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('../images/btn-add-to-cart.png')no-repeat;
+                                    background-size: cover;
+                                    background-position: center;
+                                    position: absolute;
+                                    z-index: -1;
+                                    transition: all ease-in-out 0.2s;
+                                }
+                                &:hover {
+                                    color: #ffffff;
+                                }
+                                &:hover::before {
+                                    background: url('../images/btn-add-to-cart-hover.png')no-repeat;
+                                    background-size: cover;
+                                    background-position: center;
+                                    transition: all ease-in-out 0.2s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

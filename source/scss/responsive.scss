@@ -4,15 +4,12 @@
     #page-home .block-qoute-img .qoute-img img {
         max-width: 100%;
     }
-
     #header-page .banner-slide .flexslider ul.slides .text-slide {
         width: 100%;
     }
-
     #header-page .banner-slide .flexslider ul.slides .text-slide p {
         text-align: center;
     }
-
     #footer .footer-top .footer-top__img .top-img img {
         max-width: 100%;
     }
@@ -23,17 +20,14 @@
 @media only screen and (max-width: 1700px) {}
 
 @media only screen and (max-width: 1600px) {
-
     /*===========Page About===============*/
     #header-page .banner-page .title-page {
         top: 50%;
         left: 50%;
     }
-
     #header-page .banner-page .title-page p {
         font-size: 120px;
     }
-
     #page-about {
         padding: 60px 0 80px;
     }
@@ -49,6 +43,28 @@
     #page-gallery .block-gallery {
         justify-content: space-evenly;
     }
+    /*--------------------Page Menu----------------*/
+    #page-menu .wrap-page-menu {
+        max-width: 1199px;
+    }
+    #page-menu .wrap-page-menu .content-menu {
+        margin-left: 45px;
+    }
+    #page-menu .wrap-page-menu .content-menu .note-menu {
+        flex-direction: column;
+    }
+    #page-menu .wrap-page-menu .content-menu .note-menu .item-note.note-menu-1 {
+        margin-bottom: 15px;
+    }
+    #page-menu .wrap-page-menu .content-menu .note-menu .item-note p {
+        text-align: center;
+    }
+    #page-menu .wrap-page-menu .cate-menu .list-tab-menu ul li a {
+        font-size: 23px;
+    }
+    #page-menu .wrap-page-menu .content-menu .tab-content .content-cate .content-cate__name h4 {
+        font-size: 50px;
+    }
 }
 
 @media only screen and (max-width: 1300px) {}
@@ -56,34 +72,28 @@
 @media only screen and (max-width: 1200px) {}
 
 @media only screen and (max-width: 1199px) {
-
     /*==============Header===============*/
     #header-page .sticky .wrap-menu .wrap-header-menu .navbar-menu-mobile ul li {
         padding-right: 25px;
     }
-
     /*============Page Home==============*/
     #page-home .about-home .bg-about-home .about-home__left .home-left__title h4 {
         font-size: 32px;
     }
-
     #page-home .about-home .bg-about-home .about-home__left .home-left__title p {
         font-size: 39px;
     }
-
     /*==============Page About============*/
     #page-about .about-special .about-special__content--img {
         flex-direction: column;
         align-items: center;
     }
-
     #page-about .about-history .about-history__content .history-content__right {
         margin-top: -70px;
     }
 }
 
 @media only screen and (max-width: 1100px) {
-
     /*===============Page Contact================*/
     #page-contact .contact-form .contact-form__form .name-contact,
     #page-contact .contact-form .contact-form__form .phone-contact,
@@ -91,9 +101,30 @@
         width: 100%;
         margin-bottom: 20px;
     }
-
     #page-contact .contact-form .contact-form__form .text-contact {
         margin-top: 0;
+    }
+    /*===========PAge Menu=========*/
+    #page-menu .wrap-page-menu {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    #page-menu .wrap-page-menu .cate-menu,
+    #page-menu .wrap-page-menu .content-menu {
+        width: 100%;
+    }
+    #page-menu .wrap-page-menu .cate-menu .list-tab-menu ul li a:hover:before,
+    #page-menu .wrap-page-menu .cate-menu .list-tab-menu ul li a.active:before {
+        width: 102%;
+    }
+    #page-menu .wrap-page-menu .content-menu {
+        margin-left: 0;
+    }
+    #page-menu .wrap-page-menu .content-menu .note-menu {
+        margin-top: 20px;
+    }
+    #page-menu .wrap-page-menu .content-menu .tab-content .content-cate {
+        padding-right: 0;
     }
 }
 
@@ -103,36 +134,28 @@
     #header-page {
         overflow: unset;
     }
-
     #header-page .banner-page img {
         width: 100%;
     }
-
     #header-page .sticky .wrap-menu {
         height: 115px;
     }
-
     #header-page .sticky .wrap-menu .wrap-header-menu .navbar-menu-mobile ul li:nth-child(2) {
         margin-right: 0;
     }
-
     #header-page .sticky .wrap-menu .wrap-header-menu .navbar-menu-mobile ul li:nth-child(3) {
         margin-left: 0;
     }
-
     #header-page .banner-slide .flexslider ul.slides .text-slide p {
         font-size: 30px;
     }
-
     #header-page .banner-slide .flexslider ul.slides .text-slide p span {
         font-size: 32px;
     }
-
     #header-page .banner-slide .flexslider ul.slides .text-slide .oreder-online {
         margin-top: 40px;
         text-align: center;
     }
-
     /* -----------css button menu-------- */
     #header-page .sticky .wrap-menu .navbar-button {
         display: block;
@@ -142,7 +165,6 @@
         right: 0;
         z-index: 999999;
     }
-
     #header-page .sticky .wrap-menu .navbar-button .button-sticky {
         padding: 7px 10px;
         border: 0;
@@ -150,7 +172,6 @@
         background-color: transparent;
         outline: none;
     }
-
     #header-page .sticky .wrap-menu .navbar-button .button-sticky .icon-bar {
         height: 6px;
         background-color: #876039;
@@ -159,19 +180,15 @@
         display: block;
         transition: all 0.3s;
     }
-
     #header-page .sticky .wrap-menu .navbar-button .button-sticky .icon-bar.top-bar {
         width: 70px;
     }
-
     #header-page .sticky .wrap-menu .navbar-button .button-sticky .icon-bar.middle-bar {
         width: 50px;
     }
-
     #header-page .sticky .wrap-menu .navbar-button .button-sticky .icon-bar.bottom-bar {
         width: 60px;
     }
-
     /* -------------css menu------------ */
     #header-page .sticky .wrap-menu .wrap-header-menu .navbar-menu-mobile {
         position: fixed;
@@ -187,7 +204,6 @@
         -moz-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out;
     }
-
     #header-page .sticky .wrap-menu .wrap-header-menu .navbar-menu-mobile .navbar-sticky {
         background-color: #ffc96d;
         width: 320px;
@@ -201,7 +217,6 @@
         transition: all 0.4s ease-in-out;
         display: inline-block;
     }
-
     #header-page .sticky .wrap-menu .wrap-header-menu .navbar-collapse ul {
         list-style: none;
         display: flex;
@@ -211,7 +226,6 @@
         height: 0;
         text-align: right;
     }
-
     #header-page .sticky .wrap-menu .wrap-header-menu .navbar-collapse ul li {
         position: relative;
         display: inline-block;
@@ -219,29 +233,24 @@
         padding: 0;
         margin-bottom: 0px;
     }
-
     #header-page .sticky .wrap-menu .wrap-header-menu .navbar-collapse ul li a {
         font-size: 23px;
         padding: 20px;
         text-transform: uppercase;
     }
-
     /* ---when click button----- */
     #header-page .sticky .wrap-menu .wrap-header-menu .navbar-menu-mobile.active {
         opacity: 1;
         visibility: visible;
     }
-
     #header-page .sticky .wrap-menu .wrap-header-menu .navbar-menu-mobile .navbar-sticky.active {
         right: 0;
         opacity: 1;
         visibility: visible;
     }
-
     body.show-scroll {
         overflow: hidden;
     }
-
     /* ----------css logo---------- */
     #header-page .sticky .logo {
         padding-left: 0;
@@ -251,137 +260,123 @@
         left: 50%;
         transform: translateX(-50%);
     }
-
     /*=================PAGE HOME==================*/
     #page-home .block-qoute-img {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
     }
-
     #page-home .block-qoute-img .qoute-img {
         margin-bottom: 10px;
     }
-
     #page-home .about-home {
         padding: 0;
         margin-top: 20px;
         margin-bottom: 30px;
     }
-
     #page-home .about-home .bg-about-home {
         background: unset;
     }
-
     #page-home .about-home .bg-about-home .about-home__center {
         text-align: center;
         margin-bottom: 30px;
     }
-
     #page-home .feature-item {
         padding: 60px 0 90px;
     }
-
     #page-home .feature-item .feature-item__slick .item-slide__title h4 {
         font-size: 18px;
     }
-
     #page-home .feature-item .feature-item__slick ul.slick-dots {
         bottom: -50px;
     }
-
     #page-home .testimo {
         padding: 2% 0;
     }
-
     #page-home .testimo .bg-testimo .testimo__slick {
         padding: 0 20px;
     }
-
     /**=========Footer==========*/
     #footer .footer-bottom .footer-social ul {
         padding: 0 35%;
         margin-bottom: 10px;
     }
-
     #footer .footer-bottom .footer-copyright p {
         text-align: center;
     }
-
     #footer .footer-bottom .footer-create p,
     #footer .footer-bottom .footer-create a {
         text-align: center;
     }
-
     /*===============Page About================*/
     #header-page .banner-page .title-page p {
         font-size: 100px;
     }
-
     #page-about .about-history .about-history__content {
         flex-direction: column;
         align-items: center;
     }
-
     #page-about .about-history .about-history__content .history-content__right {
         margin-top: 0;
     }
-
     #page-about .about-special .about-special__title h4,
     #page-about .about-history .about-history__title h4,
     #page-about .about-manager .about-manager__title h4 {
         font-size: 48px;
     }
-
     /*===========Page Gallery============*/
     #page-gallery .block-gallery {
         justify-content: space-around;
     }
-
     /*==================Page Contact==========*/
     #page-contact .contact-info .contact-info__content {
         flex-direction: column;
     }
-
     #page-contact .contact-info .contact-info__content .info-content__left .content-left__add {
         width: 100%;
     }
-
     #page-contact .contact-info .contact-info__content .info-content__right {
         margin-top: 30px;
         text-align: center;
     }
-
     #page-contact .contact-form {
         margin-top: 40px;
+    }
+    /*===============Page Menu===================*/
+    #page-menu .wrap-page-menu .cate-menu .list-tab-menu ul {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #page-menu .wrap-page-menu .cate-menu .list-tab-menu ul li a:hover:before,
+    #page-menu .wrap-page-menu .cate-menu .list-tab-menu ul li a.active:before {
+        width: 100%;
+        left: 0
+    }
+    #page-menu .wrap-page-menu .cate-menu .list-tab-menu ul li a {
+        padding: 0 10px;
     }
 }
 
 @media only screen and (max-width: 900px) {}
 
 @media only screen and (max-width: 767px) {
-
     /*==============Logo==========*/
     #header-page .sticky .wrap-menu {
         height: 75px;
     }
-
     #header-page .sticky .wrap-menu .logo {
         width: 85%;
     }
-
     #header-page .sticky .wrap-menu .logo a {
         display: inline-block;
     }
-
     #header-page .sticky .wrap-menu .logo a img {
         width: 100%;
     }
-
     #header-page .banner-slide .flexslider .btn-flex {
         display: none;
     }
-
     #header-page .banner-slide ol.flex-control-nav {
         display: block;
         width: 100%;
@@ -390,68 +385,59 @@
         text-align: center;
         z-index: 2;
     }
-
     #header-page .banner-slide .flex-control-paging li a {
         background: rgba(255, 255, 255, 0.6);
         width: 15px;
         height: 15px;
     }
-
     #header-page .banner-slide .flex-control-paging li a.flex-active {
         background: #fff;
     }
-
     #header-page .banner-slide .flexslider ul.slides .text-slide {
         top: 50%;
     }
-
     #header-page .banner-slide .flexslider ul.slides .text-slide .oreder-online a {
         font-size: 18px;
         background-size: 100% 100%;
         padding: 12px 30px;
     }
-
     #header-page .banner-page .title-page {
         width: 100%;
         text-align: center;
     }
-
     /*=======================Page Home=======================*/
     #page-home .testimo .bg-testimo {
         background-size: 100% 100%;
     }
-
     #page-home .testimo .bg-testimo:before {
         width: 55px;
         height: 40px;
         top: 16px;
         background-size: contain;
     }
-
     #page-home .testimo .bg-testimo .testimo__slick .testimo-item .testimo-content p {
         font-size: 18px;
     }
-
     #page-home .testimo .bg-testimo .btn-slick {
         display: none;
     }
-
     /*====================Page Contact=======================*/
     #page-contact {
         padding: 35px 0 65px;
     }
-
     #page-contact .contact-form .contact-form__form input[type="submit"] {
         padding: 12px 40px 17px;
         font-size: 20px;
     }
-
     #footer .footer-top .footer-top__img .top-img.top-img1 {
         display: none;
     }
-
     #footer .footer-bottom .footer-social ul {
         padding: 0 30%;
+    }
+    /*===============Page Menu===============*/
+    #page-menu .wrap-page-menu .cate-menu .list-tab-menu ul {
+        justify-content: space-between;
     }
 }
 
@@ -459,67 +445,53 @@
     #header-page .banner-slide .flexslider ul.slides .text-slide p {
         font-size: 23px;
     }
-
     #header-page .banner-slide .flexslider ul.slides .text-slide p span {
         font-size: 26px;
     }
-
     #header-page .banner-slide .flexslider ul.slides .text-slide .oreder-online a {
         font-size: 18px;
         background-size: 100% 100%;
         padding: 10px 20px 14px;
     }
-
     #header-page .banner-slide ol.flex-control-nav {
         bottom: 8px;
     }
-
     /*=================Page About===================*/
     #page-about {
         padding: 40px 0 60px;
     }
-
     #page-about .about-special .about-special__title h4,
     #page-about .about-history .about-history__title h4,
     #page-about .about-manager .about-manager__title h4 {
         font-size: 40px;
     }
-
     #page-about .about-special .about-special__title h4:before {
         right: -133%;
     }
-
     #page-about .about-history .about-history__title h4:before {
         right: -178%;
     }
-
     #page-about .about-manager .about-manager__title h4:before {
         right: -65%;
     }
-
     #page-about .about-special .about-special__content p,
     #page-about .about-special .about-special__content--img .content__img--center p,
     #page-about .about-history .about-history__content .history-content__left p,
     #page-about .about-manager .about-manager__content .manager__content--said p {
         font-size: 20px;
     }
-
     #page-about .about-special .about-special__title h4 {
         margin-bottom: 20px;
     }
-
     #page-about .about-history .about-history__title h4 {
         margin-bottom: 10px;
     }
-
     #page-about .about-manager .about-manager__title h4 {
         margin-bottom: 10px;
     }
-
     #page-about .about-manager .about-manager__content .manager__content--said p:before {
         top: -5px;
     }
-
     #page-about .about-history,
     #page-about .about-manager {
         margin-top: 40px;
@@ -527,175 +499,170 @@
 }
 
 @media only screen and (max-width: 414px) {
-
     /*==================Header==================*/
     #header-page .sticky .wrap-menu .logo a.logo-mobile {
         display: inline-block;
     }
-
     #header-page .sticky .wrap-menu .logo a.logo-desktop {
         display: none;
     }
-
     #header-page .sticky .wrap-menu .logo {
         width: 70%;
         left: 30%;
     }
-
     .flexslider .slides img.banner-desktop {
         display: none;
     }
-
     #header-page .banner-slide .flexslider ul.slides img.banner-mobile {
         display: block;
     }
-
     #header-page .banner-slide .flexslider ul.slides .text-slide p {
         line-height: 2;
     }
-
     #header-page .banner-slide .flexslider ul.slides .text-slide {
         top: 50%;
         left: 0;
     }
-
     #page-home .about-home .bg-about-home .about-home__left .home-left__title h4,
     #page-home .about-home .bg-about-home .about-home__left .home-left__title p {
         text-align: center;
     }
-
     /*==============================*/
     #page-home .feature-item .feature-item__slick .item-slick__img {
         text-align: center;
         display: flex;
         justify-content: center;
     }
-
     #page-home .feature-item .feature-item__slick .item-slick__img:before {
         width: 280px;
         height: 282px;
         left: 50%;
         transform: translateX(-50%);
     }
-
     #page-home .spread-joy .spread-joy__img img.spread-desktop {
         display: none;
     }
-
     #page-home .spread-joy .spread-joy__img img.spread-mobile {
         display: block;
     }
-
     #page-home .testimo .bg-testimo {
         background-size: contain;
     }
-
     #footer .footer-top .footer-top__img .top-img.top-img3 {
         display: none;
     }
-
     #footer .footer-bottom .footer-social ul {
         padding: 0 18%;
     }
-
     /*===============Page About==================*/
     #page-about .about-special .about-special__title h4:before,
     #page-about .about-history .about-history__title h4:before,
     #page-about .about-manager .about-manager__title h4:before {
         display: none;
     }
-
     #header-page .banner-page .title-page {
         text-align: center;
         width: 100%;
     }
-
     #header-page .banner-page .title-page p {
         font-size: 80px;
     }
-
     #header-page .banner-page .oreder-online {
         width: 100%;
         text-align: center;
     }
-
     #header-page .banner-page .oreder-online a {
         font-size: 18px;
         background-size: 100% 100%;
         padding: 10px 20px 14px;
     }
-
     #page-about .about-special .about-special__content--img .content__img--left {
         margin-left: 0;
     }
-
     #page-about .about-special .about-special__content--img .content__img--left img {
         max-width: 100%;
     }
-
     /*====================Page Contact=====================*/
     #page-contact .contact-info .contact-info__title h4:before,
     #page-contact .contact-form .contact-form__title h4:before {
         display: none;
     }
-
     #page-contact .contact-form .contact-form__form .name-contact,
     #page-contact .contact-form .contact-form__form .phone-contact {
         margin-right: 0;
     }
-
     #page-contact .contact-info .contact-info__content .info-content__right img {
         max-width: 100%;
     }
-
+    /*===============Page Menu===============*/
+    #page-menu {
+        padding: 50px 0 70px;
+    }
+    #page-menu .wrap-page-menu .content-menu .tab-content .content-cate .content-cate__name h4 {
+        font-size: 40px;
+    }
+    #page-menu .wrap-page-menu .content-menu .tab-content .content-cate .content-cate__note p {
+        font-size: 18px;
+    }
+    #page-menu .wrap-page-menu .cate-menu .list-tab-menu {
+        padding: 0 10px;
+    }
+    #page-menu .wrap-page-menu .cate-menu .list-tab-menu ul li a {
+        font-size: 22px;
+    }
+    #page-menu .wrap-page-menu .content-menu .tab-content .product-menu {
+        flex-direction: column;
+    }
+    #page-menu .wrap-page-menu .content-menu .tab-content .product-menu .product-menu__cart--price {
+        margin-left: 0;
+    }
+    #page-menu .wrap-page-menu .content-menu .tab-content .product-menu .product-menu__cart--price .menu-item__cart a {
+        padding: 10px 15px;
+    }
+    #page-menu .wrap-page-menu .content-menu .tab-content .product-menu .product-menu__cart--price .menu-item__cart a:before {
+        background-size: 100% 100%;
+    }
+    #page-menu .wrap-page-menu .content-menu .tab-content .product-menu .product-menu__name p {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width: 375px) {
-
     /*=============Page About===========*/
     #header-page .banner-page .title-page p {
         font-size: 67px;
     }
-
     #page-about {
         padding: 30px 0 40px;
     }
-
     #page-about .about-special .about-special__title h4 {
         margin-bottom: 10px;
     }
-
     #page-about .about-history .about-history__title h4 {
         margin-bottom: 0;
     }
-
     #page-about .about-manager .about-manager__title h4 {
         margin-bottom: 0;
     }
-
     #page-about .about-history .about-history__content .history-content__right img {
         max-width: 100%;
     }
-
     #page-about .about-special .about-special__content p,
     #page-about .about-special .about-special__content--img .content__img--center p,
     #page-about .about-history .about-history__content .history-content__left p,
     #page-about .about-manager .about-manager__content .manager__content--said p {
         font-size: 18px;
     }
-
     /*=============Page COntact====================*/
     #page-contact .contact-info .contact-info__content .info-content__left .content-left__add ul li {
         font-size: 18px;
     }
-
     #page-contact .contact-info .contact-info__content .info-content__left .content-left__add ul {
         padding-left: 0;
     }
 }
 
 @media only screen and (max-width: 320px) {
-
     #page-about .about-special .about-special__title h4,
     #page-about .about-history .about-history__title h4,
     #page-about .about-manager .about-manager__title h4 {
